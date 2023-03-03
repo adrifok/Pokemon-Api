@@ -15,7 +15,7 @@ server.use(express.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://pokemon-api-adrifok.vercel.app/'); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Origin', 'https://pokemon-api-adrifok.vercel.app'); // update to match the domain you will make the request from
                                             
                                               //'https://pokemon-api-phi-seven.vercel.app'
   res.header('Access-Control-Allow-Credentials', 'true');
